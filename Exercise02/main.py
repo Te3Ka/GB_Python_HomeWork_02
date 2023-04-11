@@ -41,3 +41,5 @@ for x in range (1, 501):
 else:
     print(f"При сумме чисел {_sum_number} и произведении {_mul_number}")
     print("Числа не найдены")
+
+author()
