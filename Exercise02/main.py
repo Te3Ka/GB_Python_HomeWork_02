@@ -15,14 +15,16 @@
 
 # Функция вывода автора программы
 def author():
+    print('****************************')
     print('Программа создана:')
     print('Илья "Te3K@_PaynE" Новичихин')
     print('79811131773@yandex.ru')
+    print('****************************')
 
 # Проверка на введение корректного числа.
 def correct_number(string):
     _number = int(input(string))
-    while (_number > 1000) or (_number <= 0):
+    while (_number <= 0):
         _number = int(input("Введено неверное число! Введите заново: "))
     return _number
 
@@ -32,7 +34,7 @@ print("При условии, что такие числа существуют"
 
 _sum_number = correct_number("Введите сумму чисел: ")
 _mul_number = correct_number("Введите произведение чисел: ")
-for x in range (1, 501):
+for x in range(1, 1001):
     y = _sum_number - x
     if (x * y == _mul_number):
         print(f"При сумме чисел {_sum_number} и произведении {_mul_number}")
