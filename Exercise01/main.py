@@ -42,4 +42,4 @@ if (_reshka > _orel):
 else:
     print(f"Нужно перевернуть монеты с решкой в количество {_reshka} штук")
 
-author
+author()
